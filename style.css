@@ -14,12 +14,9 @@ body {
   overflow: hidden;
   padding-bottom: 1.5rem;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.233);
-  transition: all 0.3s ease-in-out;
   border-radius: 0 0 5px 5px;
 }
-#container:hover {
-  box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.516);
-}
+
 /* The result in the input display */
 #result {
   all: unset;
