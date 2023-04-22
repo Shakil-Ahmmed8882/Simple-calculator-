@@ -7,51 +7,77 @@ body {
   padding: 0;
 }
 
+/* wrapper */
 #container {
-  width: 25rem;
-  background-color: rgb(3, 3, 3);
+  width: 19rem;
+  background-color: #3a4452;
   overflow: hidden;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.233);
+  transition: all 0.3s ease-in-out;
+  border-radius: 0 0 5px 5px;
 }
+#container:hover {
+  box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.516);
+}
+/* The result in the input display */
 #result {
   all: unset;
   width: 95%;
-  height: 9rem;
+  height: 8rem;
   padding-right: 5%;
   background-color: #000000;
   color: #fff;
   text-align: right;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2.3rem;
+  z-index: 2;
+  margin-bottom: .7rem;
 }
+
+/*button rows styled
+  for the space be equally distributed */
 #row {
   display: flex;
   justify-content: space-around;
 }
+
+/* define button styles */
 button {
   all: unset;
-  width: 40px;
-  height: 40px;
-  background-color: #000000;
-  box-shadow: 0px 0px 5px rgba(55, 55, 55, 0.184);
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
   color: #fff;
-  border-radius: 50%;
+  border-radius: 10px;
   padding: 0.4rem;
-  margin: 0.5rem 0;
+  margin: 0.8rem 0;
   text-align: center;
   font-weight: bold;
-  font-size: 2rem;
-  transition: background-color 0.2s linear;
+  font-size: 1.3rem;
+  transition: all 0.1s linear;
+  transform: scale(1.1);
+  cursor: pointer;
 }
+
+button{
+  font-size: 1.1rem; /* default font size */
+}
+
+button:active {
+  transform: scale(0.9); /* scale down to 0.9 when clicked */
+}
+
+/* Define all the operators
+  & the additional buttons*/
 #btn-devide,
 #btn-minus,
 #btn-plus,
 #btn-equal,
 #btn-multiply,
 #btn-C {
-  background-color: rgb(255, 132, 0);
-  color: #000;
-}
-button:hover {
-  background-color: #01133b10;
+  color: #00d9f6;
+  font-weight: 900;
 }

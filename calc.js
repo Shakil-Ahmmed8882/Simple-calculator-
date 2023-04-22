@@ -1,5 +1,6 @@
 
 
+
 let result = ''
 const inputField = document.getElementById('result')
 
