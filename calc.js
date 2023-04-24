@@ -4,9 +4,11 @@
 let result = ''
 const inputField = document.getElementById('result')
 
+
 function Number(num){
-      result += num
-      inputField.value = result
+result += num
+// add every three digits
+inputField.value = result.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 function Operator(operator){
