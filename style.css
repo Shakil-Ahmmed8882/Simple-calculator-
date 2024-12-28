@@ -5,7 +5,10 @@ body {
   place-content: center;
   margin: 0;
   padding: 0;
+  background: linear-gradient(135deg, #23144cf9, #47106a);
+  color: #ffffff; /* Optional: Ensures text is visible on the dark background */
 }
+
 
 /* wrapper */
 #container {

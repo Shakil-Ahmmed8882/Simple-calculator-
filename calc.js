@@ -33,13 +33,6 @@ function calculate() {
 
 
 
-
-
-
-
-
-
-
 //Adding Event Listener buttons here
 
 document.getElementById('btn-0').addEventListener("click",function(){
